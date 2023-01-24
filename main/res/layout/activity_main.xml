@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Wgranie Tła-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tlo2"
+        android:scaleType="centerCrop"/>
+
+    <!--Wgranie Tytułu-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="ARRR!"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/highScore"
+        android:layout_above="@id/play" />
+
+    <!--Wgranie przycisku Play-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="64sp"
+        android:text="Play"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:id="@+id/play"/>
+
+    <!--High Score -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="High Score:"
+        android:id="@+id/highScore"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+    <!--Ikonka głośnika -->
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/volumeCtrl"
+        android:src="@drawable/ic_baseline_volume_up_24" />
+</RelativeLayout>
